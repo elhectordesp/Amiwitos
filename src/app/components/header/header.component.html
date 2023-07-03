@@ -1,0 +1,28 @@
+<nav>
+  <ul>
+    <li>
+      <a (click)="seleccionarPestanya('inicio')" class="botonRosa">Inicio</a>
+    </li>
+    <li>
+      <a
+        (click)="seleccionarPestanya('acerca-de')"
+        [ngClass]="{ botonRosa: iconoSeleccionado === 'servicios' }"
+        >Acerca de</a
+      >
+    </li>
+    <li>
+      <a
+        (click)="seleccionarPestanya('servicios')"
+        [ngClass]="{ botonRosa: iconoSeleccionado === 'acerca-de' }"
+        >Servicios</a
+      >
+    </li>
+    <li>
+      <a
+        (click)="seleccionarPestanya('contacto')"
+        [ngClass]="{ botonRosa: iconoSeleccionado === 'acerca-de' }"
+        >Contacto</a
+      >
+    </li>
+  </ul>
+</nav>
